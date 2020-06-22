@@ -1,0 +1,7 @@
+<h3>List of all the songs: </h3>
+
+<p>
+<% @songs.each do |song| %>
+        <%= link_to song.name, "/songs/#{song.id}" %>
+<% end %>
+</p>
